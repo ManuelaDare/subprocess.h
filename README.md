@@ -1,4 +1,4 @@
-# 🐜 subprocess.h
+*!🐜#subprocess.h
 
 [![Actions Status](https://github.com/sheredom/subprocess.h/workflows/CMake/badge.svg)](https://github.com/sheredom/subprocess.h/actions)
 [![Build Status](https://ci.appveyor.com/api/projects/status/0sm37thiavt9juee?svg=true)](https://ci.appveyor.com/project/sheredom/subprocess-h)
@@ -26,7 +26,7 @@ wait for them to complete.
 To launch a process you call `subprocess_create` like so:
 
 ```c
-const char *command_line[] = {"echo", "\"Hello, world!\"", NULL};
+const char  command_line[] = {"echo", "\"Hello, world!\"", NULL};
 struct subprocess_s subprocess;
 int result = subprocess_create(command_line, 0, &subprocess);
 if (0 != result) {
@@ -244,3 +244,4 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 
 For more information, please refer to <http://unlicense.org/>
+ 
